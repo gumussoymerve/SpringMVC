@@ -1,0 +1,76 @@
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+h2{
+	font-style: italic;
+}
+
+#banner {
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#controlBar {
+	padding-top: 3px;
+	text-align: center;
+}
+
+#newFormWrapper,#editFormWrapper {
+	width: 475px;
+}
+
+table {
+	border: 1px solid;
+	width: 100%;
+	border-collapse: collapse;
+}
+table tr td:first-child{
+	text-align: center;
+}
+
+tr,td,th {
+	border: 1px solid #0080FF;
+	text-align: left;
+	padding: 5px;
+	font-style: italic;
+}
+
+th {
+	border: none;
+	font-style:normal;
+	text-align: center;
+	/* IE10 Consumer Preview */
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #00A3EF 100%);
+	/* Mozilla Firefox */
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #00A3EF 100%);
+	/* Opera */
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #00A3EF 100%);
+	/* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF),
+		color-stop(1, #00A3EF));
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #00A3EF 100%);
+	/* W3C Markup, IE10 Release Preview */
+	background-image: linear-gradient(to top, #FFFFFF 0%, #00A3EF 100%);
+}
+
+label.error {
+    color: red;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-top: 0.5em;
+    width: 100%;
+    float: none;
+}
+ 
+@media screen and (orientation: portrait){
+    label.error { margin-left: 0; display: block; }
+}
+ 
+@media screen and (orientation: landscape){
+    label.error { display: inline-block; margin-left: 22%; }
+}
+ 
+em { color: red; font-weight: bold; padding-right: .25em; }
